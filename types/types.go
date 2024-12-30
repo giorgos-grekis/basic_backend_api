@@ -22,12 +22,12 @@ type UserStore interface {
 // }
 
 type User struct {
-	ID        int       `json:"id`
+	ID        int       `json:"id"`
 	FirstName string    `json:"firstName"`
 	LastName  string    `json:"lastName"`
-	Email     string    `json:"email`
+	Email     string    `json:"email"`
 	Password  string    `json:"-"`
-	CreateAt  time.Time `json:"createdAt:`
+	CreatedAt time.Time `json:"createdAt"`
 }
 
 type RegisterUserPayload struct {
